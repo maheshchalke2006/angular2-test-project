@@ -11,6 +11,7 @@ import { ProductComponent } from './component/product/product.component';
 import { LoginComponent } from './component/login/login.component';
 import { AdminHomepageComponent } from './component/admin-homepage/admin-homepage.component';
 import { UserListComponent } from './component/user-list/user-list.component';
+import { PaymentListComponent } from './component/payment-list/payment-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UserListComponent } from './component/user-list/user-list.component';
     ProductComponent,
     LoginComponent,
     AdminHomepageComponent,
-    UserListComponent
+    UserListComponent,
+    PaymentListComponent
   ],
   imports: [
     BrowserModule
