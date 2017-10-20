@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpModule } from '@angular/http';
+
 import { AppComponent } from './app.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
@@ -12,6 +14,9 @@ import { LoginComponent } from './component/login/login.component';
 import { AdminHomepageComponent } from './component/admin-homepage/admin-homepage.component';
 import { UserListComponent } from './component/user-list/user-list.component';
 import { PaymentListComponent } from './component/payment-list/payment-list.component';
+import { Router, Routes, RouterModule} from '@angular/router';
+import { pageMappingRoute } from './app.routing';
+
 
 @NgModule({
   declarations: [
@@ -28,9 +33,14 @@ import { PaymentListComponent } from './component/payment-list/payment-list.comp
     PaymentListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule, pageMappingRoute
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+const pageRouting: Routes = [
+  {
+  }
+];

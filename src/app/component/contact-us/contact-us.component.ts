@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(@Inject(Router) private router: Router) { }
   ngOnInit() {
   }
 
+  BackToHome() {
+    console.log('Button Clicked');
+    this.router.navigate(['/']);
+  }
 }
