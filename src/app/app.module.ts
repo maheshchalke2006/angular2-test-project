@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
 import { ProductListComponent } from './component/product-list/product-list.component';
 import { ProductComponent } from './component/product/product.component';
 import { LoginComponent } from './component/login/login.component';
+import { AdminHomepageComponent } from './component/admin-homepage/admin-homepage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginComponent } from './component/login/login.component';
     PageNotFoundComponent,
     ProductListComponent,
     ProductComponent,
-    LoginComponent
+    LoginComponent,
+    AdminHomepageComponent
   ],
   imports: [
     BrowserModule
